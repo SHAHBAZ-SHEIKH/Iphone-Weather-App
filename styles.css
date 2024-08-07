@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
+}
+
+
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #0d1b2a, #1a237e);
+    box-shadow: 0 4px 8px 0 #fff, 0 6px 20px 0 #fff;
+}
+.weatherMain{
+    background: linear-gradient(180deg, #191970 0%, #000000 100%);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.weatherInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highTemp{
+    display: flex;
+    gap: 5px;
+}
+
+.weatherInfo h3{
+    font-size: 20px;
+}
+
+.weatherInfo h4{
+    font-size: 28px;
+}
+
+.hourWeather{
+    width: 90%;
+    background: linear-gradient(180deg, #191970 0%, #000000 100%);
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.showWeather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.showWeather img{
+    width: 50px;
+}
+
+.foreCast{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    background: linear-gradient(180deg, #191970 0%, #000000 100%);
+    width: 90%;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.weatherForecast{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headingForcast h3{
+    margin-left: 52px;
+}
+
+.weatherForecast img{
+    width: 50px;
+}
+
+.line2{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.line{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+}
+
+h3,h4,h5,p{
+    color: white;
+}
+
+.bottom-section{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.05) 0 54px 55px , rgba(0,0,0,0.05) 0 -12px 30px,rgba(0,0,0,0.05) 0 4px 6px,rgba(0,0,0,0.05) 0 12px 13px,rgba(0,0,0,0.09) 0 -3px 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input-container{
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+}
+
+.input-container #submit{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+
+
+/* @media(width<=1024px){
+    .weatherMain{
+        width: 40%;
+    }
+    .hourWeather{
+        padding: 20px;
+    }
+    .foreCast{
+        padding: 20px;
+    }
+}
+
+
+@media(width<=920px){
+    .weatherMain{
+        width: 60%;
+    }
+    .hourWeather{
+        padding: 20px;
+    }
+    .foreCast{
+        padding: 20px;
+    }
+}
+
+@media(width<=540px){
+    .weatherMain{
+        width: 90%;
+    }
+    .hourWeather{
+        padding: 20px;
+    }
+    .foreCast{
+        padding: 20px;
+    }
+} 
+
+ */
+
+
+ @media (max-width: 1024px) {
+    .weatherMain {
+        width: 80%;
+    }
+}
+
+@media (max-width: 920px) {
+    .weatherMain {
+        width: 70%;
+    }
+}
+
+@media (max-width: 540px) {
+    .weatherMain {
+        width: 90%;
+    }
+}
